@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
     <link rel="stylesheet" href="./Estilos/estilos.css">
     <title>TomamosUnosMates</title>
 </head>
@@ -35,9 +36,31 @@
         </nav>
     </header>
     <Main class="Mainpublicidad">
-        <H1> Bienvenidos a nuestra tienda virtual</H1>
-        <p>Somos expertos en la relización de mates, si queres el tuyo personalizado no dudes en contactarnos!</p>
-       <img src="./imagenes/mate y termo.jpg" alt="">
+        <div class="Container w-100">
+            <h1 class="text-center">Tomemos Unos Mates</h1>
+            <p class="text-center">Somos expertos en la relización de mates, si queres el tuyo personalizado no dudes en contactarnos!</p>
+            <div id="carouselExampleFade" class="carousel slide carousel-fade" data-bs-ride="carousel">
+                <div class="carousel-inner">
+                  <div class="carousel-item active">
+                    <img src="./imagenes/fotocarr1.png" class="d-block w-100 fotcarr" alt="...">
+                  </div>
+                  <div class="carousel-item">
+                    <img src="./imagenes/fotocarr2.jpg" class="d-block w-100 fotcarr" alt="...">
+                  </div>
+                  <div class="carousel-item">
+                    <img src="./imagenes/fotocarr3.jpeg" class="d-block w-100 fotcarr" alt="...">
+                  </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="prev">
+                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="next">
+                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Next</span>
+                </button>
+              </div>
+        </div>
     </Main>
     
     <section class="promociones">
@@ -99,5 +122,6 @@
     <script>
         AOS.init();
     </script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>
 </body>
 </html>
