@@ -1,0 +1,322 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  letter-spacing: 1px;
+  font-family: "Titan One";
+}
+
+.bodyform {
+  background-color: #f7fff7;
+}
+
+/* inicio seccion productos */
+.mainsproductos {
+  display: flex;
+  padding: 20px;
+  margin: 10px;
+  font-weight: bold;
+  font-size: 30px;
+  color: #f7fff7;
+  background-color: #1a535c;
+  align-content: space-around;
+  justify-content: space-around;
+}
+
+.Yerbamate {
+  display: grid;
+  grid-template-areas: "y1erp    y2dop    y3erp" "y4top    y5top    y6top";
+}
+
+.Yerbamate div {
+  padding: 1rem;
+  border-style: ridge;
+  margin: 1rem;
+  background-color: white;
+  width: 70%;
+  height: auto;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  font-size: 1rem;
+  font-weight: bold;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.imgmates {
+  width: 18rem;
+  height: 24rem;
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.botoncomprar {
+  background: rgb(26, 83, 92);
+  background: linear-gradient(90deg, rgb(26, 83, 92) 52%, rgb(78, 205, 196) 100%);
+  padding: 1rem;
+  border-radius: 3rem;
+  color: white;
+  font-family: "Titan One", cursive;
+  font-weight: 1100;
+  transition: all 500ms;
+  letter-spacing: 2px;
+}
+
+.botoncomprar:hover {
+  background: rgb(78, 205, 196);
+  color: black;
+  letter-spacing: 4px;
+}
+
+.Yerbamate div p {
+  padding: 5px;
+}
+
+.Yerbamate div .botoncomprar {
+  padding: 1rem;
+}
+
+/* Fin seccion productos */
+/* inicio seccion mayoristas */
+.formmayo {
+  width: 75%;
+  height: auto;
+  padding: 3rem;
+}
+
+.textomayo {
+  padding: 1rem;
+  margin-top: 1rem;
+  font-size: 22px;
+  font-family: "Courier New", Courier, monospace;
+}
+
+/* fin seccion mayorista */
+/* inicio seccion envios */
+.Encabezados {
+  display: flex;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  font-weight: bolder;
+  font-size: 2.5rem;
+  background-color: #4ecdc4;
+  justify-content: center;
+  color: darkslategrey;
+  padding: 1rem;
+}
+
+.envioscuerpo {
+  display: flex;
+  flex-direction: column;
+  font-size: 1rem;
+  font-family: Arial;
+}
+
+.empresasenvios {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  height: auto;
+  padding: 2rem;
+}
+
+.envioscuerpo p {
+  padding: 1rem;
+  font-size: larger;
+}
+
+.empresasenvios div {
+  width: 33%;
+}
+
+.empresasenvios div img {
+  width: 100%;
+  height: 100%;
+  padding: 1.5rem;
+}
+
+/* fin seccion envios */
+/* inicio seccion contacto */
+.btn-primary {
+  background-color: #4ecdc4;
+  color: black;
+  padding: 15px 25px;
+  margin: 10px;
+  border-radius: 5px;
+  border: grey;
+}
+
+.col-md-6 {
+  padding: 12px 12px 12px 0;
+  letter-spacing: 4px;
+  font-size: 1rem;
+}
+
+.form-label {
+  font-family: "Poppins", sans-serif;
+  font-weight: 15px;
+}
+
+.formularios {
+  width: 75%;
+  height: auto;
+  padding: 3rem;
+}
+
+/* inicio index */
+/* inicio header */
+.headerf {
+  width: 100%;
+  height: 12vh;
+  font-weight: 400;
+  font-size: large;
+  background-color: #1a535c;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  display: flex;
+  flex-direction: row;
+  justify-items: center;
+  align-content: center;
+}
+
+.logo img {
+  margin: 0;
+  padding: 0;
+  width: 3rem;
+  height: 3rem;
+  background-color: #1a535c;
+}
+
+.navf {
+  display: flex;
+  align-items: center;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 3rem;
+  background-color: #1a535c;
+}
+
+.secciones {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  list-style-type: none;
+}
+
+.secciones li a {
+  text-decoration: none;
+  color: white;
+}
+
+/* fin header */
+/* inicio publicidad */
+.Mainpublicidad {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: black;
+  font-style: normal;
+  font-weight: holder;
+  font-size: 1rem;
+  line-height: normal;
+}
+
+.fotcarr {
+  height: 30rem;
+}
+
+.Mainpublicidad div p {
+  font-size: larger;
+}
+
+/* fin publicidad */
+/* inicio productos en promocion */
+.promociones {
+  display: flex;
+  justify-content: center;
+  font-size: larger;
+  color: black;
+  background-color: #4ecdc4;
+  padding: 2rem;
+  font-weight: 900;
+  margin-top: 2rem;
+}
+
+.Mates {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  grid-template-areas: "1erproducto 2doproducto" "3erproducto 4toproducto";
+  align-items: center;
+  justify-items: center;
+  margin: 3rem;
+}
+
+.Mates div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 2rem;
+  font-family: "Poppins";
+  font-size: x-large;
+  padding: 1rem;
+  border-style: ridge;
+  background-color: white;
+  width: 70%;
+  height: auto;
+  font-weight: bold;
+}
+
+/* fin productos en promocion */
+/* inicio footer */
+.footerf {
+  font-size: large;
+  font-weight: bolder;
+  color: white;
+  background-color: #1a535c;
+  padding-top: 1rem;
+  display: grid;
+  grid-template-areas: "mdp     mdp" "redes   subs" "dres    dres";
+  align-content: space-between;
+}
+
+.mdp {
+  grid-area: mdp;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.mdp img {
+  width: 75%;
+}
+
+.subs {
+  font-size: large;
+  grid-area: subs;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  padding-right: 2rem;
+}
+
+.redes {
+  grid-area: redes;
+  display: flex;
+  flex-direction: column;
+  padding-left: 2rem;
+}
+
+.dres {
+  grid-area: dres;
+  font-size: medium;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* fin footer */
+/* fin index *//*# sourceMappingURL=style.css.map */

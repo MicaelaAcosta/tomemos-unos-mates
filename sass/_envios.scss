@@ -1,0 +1,40 @@
+
+/* inicio seccion envios */
+
+.Encabezados{
+    display: flex;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: bolder;
+    font-size: 2.5rem;
+    background-color: #4ecdc4ff;
+    justify-content: center;
+    color: darkslategrey;
+    padding: 1rem;
+}
+.envioscuerpo{
+    display: flex;
+    flex-direction: column;
+    font-size: 1rem;
+    font-family: Arial;
+}
+.empresasenvios{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    height: auto;
+    padding: 2rem;
+}
+.envioscuerpo p{
+    padding: 1rem;
+    font-size: larger;
+}
+.empresasenvios div{
+    width: 33%;
+
+}
+.empresasenvios div img{
+    width: 100%;
+    height: 100%;
+    padding: 1.5rem;
+}
+/* fin seccion envios */
