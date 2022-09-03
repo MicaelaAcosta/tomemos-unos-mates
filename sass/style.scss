@@ -4,10 +4,9 @@
 @import "mayoristas";
 @import "envios";
 @import "contacto";
-@mixin dimensiones ($ancho) ($alto) {
+@mixin dimensiones ($ancho , $alto) {
     width: $ancho;
     height: $alto;
-
 }
 .flexcolum{
     display: flex;
@@ -18,7 +17,7 @@
 
 /* inicio header */
 .headerf{
-    @include dimenciones (100%,12vh)
+    @include dimensiones (100%,12vh);
     width: 100%;
     height: 12vh;
     font-weight: 400;
@@ -43,8 +42,8 @@
     align-items: $align;
     margin: 0;
     padding: 0;
-    @include dimenciones (100%,3rem)
-    background-color: $fondo
+    @include dimensiones (100%,3rem);
+    background-color: $fondo;
 }
 .secciones{
     width: 100%;
@@ -65,7 +64,7 @@
 /* inicio publicidad */
 
 .Mainpublicidad{
-    @extend .flexcolum
+    @extend .flexcolum;
     align-items: $align;
     color: black;
     font-style: normal;
@@ -107,7 +106,7 @@
 }
 
 .Mates div{
-    @extend .flexcolum
+    @extend .flexcolum;
     align-items: $align;
     margin: 2rem ;
     font-family: 'Poppins';
@@ -115,7 +114,7 @@
     padding: 1rem;
     border-style: ridge;
     background-color: #ffffffff;
-    @include dimenciones (70%,auto)
+    @include dimensiones (70%,auto);
     font-weight: bold;
 }
 
@@ -140,7 +139,7 @@
 }
 .mdp{
     grid-area: mdp;
-    @extend .flexcolum
+    @extend .flexcolum;
     align-items: $align;
 }
 .mdp img{
@@ -150,19 +149,19 @@
 .subs{
     font-size: large;
     grid-area: subs;
-    @extend .flexcolum
+    @extend .flexcolum;
     align-items: flex-end;
     padding-right: 2rem;
 }
 .redes{
     grid-area: redes;
-    @extend .flexcolum
+    @extend .flexcolum;
     padding-left: 2rem;
 }
 .dres{
     grid-area: dres;
     font-size: medium;
-    @extend .flexcolum
+    @extend .flexcolum;
     align-items: $align;
 }
 /* fin footer */

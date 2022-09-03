@@ -164,9 +164,16 @@
   padding: 3rem;
 }
 
+.flexcolum, .dres, .redes, .subs, .mdp, .Mates div, .Mainpublicidad {
+  display: flex;
+  flex-direction: column;
+}
+
 /* inicio index */
 /* inicio header */
 .headerf {
+  width: 100%;
+  height: 12vh;
   width: 100%;
   height: 12vh;
   font-weight: 400;
@@ -214,8 +221,6 @@
 /* fin header */
 /* inicio publicidad */
 .Mainpublicidad {
-  display: flex;
-  flex-direction: column;
   align-items: center;
   color: black;
   font-style: normal;
@@ -256,8 +261,6 @@
 }
 
 .Mates div {
-  display: flex;
-  flex-direction: column;
   align-items: center;
   margin: 2rem;
   font-family: "Poppins";
@@ -285,8 +288,6 @@
 
 .mdp {
   grid-area: mdp;
-  display: flex;
-  flex-direction: column;
   align-items: center;
 }
 
@@ -297,24 +298,18 @@
 .subs {
   font-size: large;
   grid-area: subs;
-  display: flex;
-  flex-direction: column;
   align-items: flex-end;
   padding-right: 2rem;
 }
 
 .redes {
   grid-area: redes;
-  display: flex;
-  flex-direction: column;
   padding-left: 2rem;
 }
 
 .dres {
   grid-area: dres;
   font-size: medium;
-  display: flex;
-  flex-direction: column;
   align-items: center;
 }
 
