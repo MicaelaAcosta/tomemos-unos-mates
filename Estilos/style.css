@@ -171,51 +171,47 @@
 
 /* inicio index */
 /* inicio header */
-.headerf {
-  width: 100%;
-  height: 12vh;
-  width: 100%;
-  height: 12vh;
-  font-weight: 400;
-  font-size: large;
+.headerjs nav {
+  padding: 0%;
+}
+.headerjs nav div {
   background-color: #1a535c;
-  padding-top: 1rem;
-  padding-bottom: 1rem;
-  display: flex;
-  flex-direction: row;
-  justify-items: center;
-  align-content: center;
-}
-
-.logo img {
-  margin: 0;
-  padding: 0;
-  width: 3rem;
-  height: 3rem;
-  background-color: #1a535c;
-}
-
-.navf {
-  display: flex;
-  align-items: center;
-  margin: 0;
-  padding: 0;
-  width: 100%;
-  height: 3rem;
-  background-color: #1a535c;
-}
-
-.secciones {
-  width: 100%;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-around;
-  list-style-type: none;
-}
-
-.secciones li a {
-  text-decoration: none;
   color: white;
+}
+.headerjs nav div div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+}
+.headerjs nav div div h1 {
+  letter-spacing: 1px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-weight: 800;
+}
+.headerjs nav div div div ul li {
+  padding-left: 2rem;
+  padding-right: 2rem;
+}
+.headerjs nav div div div ul li a {
+  color: white;
+  font-weight: 800;
+  font-size: x-large;
+}
+
+.logo {
+  margin: 0;
+  padding: 0;
+  width: 6rem;
+  height: 6rem;
+}
+
+.prodropdown {
+  background-color: #1a535c;
+  color: grey;
+}
+.prodropdown li a {
+  text-decoration: none;
 }
 
 /* fin header */
@@ -273,26 +269,36 @@
   font-weight: bold;
 }
 
+.Mates div img {
+  width: 100%;
+}
+
 /* fin productos en promocion */
 /* inicio footer */
 .footerf {
-  font-size: large;
+  font-size: medium;
   font-weight: bolder;
   color: white;
   background-color: #1a535c;
   padding-top: 1rem;
   display: grid;
-  grid-template-areas: "mdp     mdp" "redes   subs" "dres    dres";
+  grid-template-areas: "mdp      mdp     subs" "redes    dres    subs";
   align-content: space-between;
+  grid-template-columns: 1fr 1fr 1fr;
 }
 
 .mdp {
   grid-area: mdp;
-  align-items: center;
+  align-items: flex-start;
+}
+
+.mdp p {
+  padding-left: 2rem;
 }
 
 .mdp img {
-  width: 75%;
+  width: 60%;
+  padding-left: 1rem;
 }
 
 .subs {
@@ -309,9 +315,73 @@
 
 .dres {
   grid-area: dres;
-  font-size: medium;
-  align-items: center;
+  justify-content: flex-end;
+}
+
+.dres p {
+  font-size: small;
+  height: 100;
+  margin: 0;
 }
 
 /* fin footer */
-/* fin index *//*# sourceMappingURL=style.css.map */
+/* fin index */
+/* movile */
+@media screen and (max-width: 600px) {
+  .Mates {
+    display: flex;
+    flex-direction: column;
+  }
+  .Yerbamate {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+}
+/* Tablet*/
+@media screen and (max-width: 800px) {
+  .Mates {
+    margin: 0;
+  }
+  .Mates div img {
+    width: 100%;
+  }
+  .Mates div {
+    margin-top: 1rem;
+  }
+  .Yerbamate {
+    display: grid;
+    grid-template-areas: "y1erp    y2dop" "y3erp    y4top" "y5top    y6top";
+  }
+  .Yerbamate div {
+    padding: 0;
+    width: auto;
+    margin: 1rem;
+  }
+  .Yerbamate div img {
+    width: 100%;
+  }
+  .mdp p {
+    font-size: auto;
+  }
+  .mdp img {
+    width: 100%;
+  }
+  .redessociales img {
+    width: 20%;
+  }
+  .subs {
+    font-size: medium;
+    width: 80%;
+    padding: 0;
+  }
+  .subs section {
+    display: flex;
+    flex-direction: column;
+    width: 86%;
+  }
+  .subs section input {
+    width: 80%;
+    height: 85%;
+  }
+}/*# sourceMappingURL=style.css.map */

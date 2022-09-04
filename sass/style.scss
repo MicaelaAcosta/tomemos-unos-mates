@@ -16,47 +16,54 @@
 /* inicio index */
 
 /* inicio header */
-.headerf{
-    @include dimensiones (100%,12vh);
-    width: 100%;
-    height: 12vh;
-    font-weight: 400;
-    font-size: large;
-    background-color: #1a535cff;
-    padding-top: 1rem;
-    padding-bottom: 1rem;
-    display: flex;
-    flex-direction: row;
-    justify-items: center;
-    align-content: $align;
+.headerjs{
+    nav{
+        padding: 0%;
+        div{
+            background-color: $fondo;
+            color: white;
+            div{
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                width: 100%;
+                h1{
+                    letter-spacing: 1px;
+                    font-family: Verdana, Geneva, Tahoma, sans-serif;
+                    font-weight: 800;
+                }
+                div{
+                    ul{
+                        li{
+                            padding-left: 2rem;
+                            padding-right: 2rem;
+                            a{
+                                color: white;
+                                font-weight: 800;
+                                font-size:x-large;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
 }
-.logo img{
+
+.logo{
     margin: 0;
     padding: 0;
-    width: 3rem;
-    height: 3rem;
-    background-color: $fondo
+    width: 6rem;
+    height: 6rem;
 }
-.navf{
-    display: flex;
-    align-items: $align;
-    margin: 0;
-    padding: 0;
-    @include dimensiones (100%,3rem);
+.prodropdown{
     background-color: $fondo;
-}
-.secciones{
-    width: 100%;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    list-style-type: none;
-}
-
-.secciones li a{
-    text-decoration: none;
-    color: #ffffffff;
-
+    li{
+        a{
+            text-decoration: none;
+        }
+    }
+    color: grey
 }
 
 /* fin header */
@@ -102,8 +109,9 @@
     "3erproducto 4toproducto";
     align-items: $align;
     justify-items: center;
-    margin: 3rem;
+    margin: 3rem;   
 }
+
 
 .Mates div{
     @extend .flexcolum;
@@ -118,32 +126,43 @@
     font-weight: bold;
 }
 
+.Mates div img{
+    width: 100%;
+}
+ 
+
 /* fin productos en promocion */
 
 /* inicio footer */
 
 .footerf{
-    font-size: large;
+    font-size: medium;
     font-weight: bolder;
     color: white;
     background-color: $fondo;
     padding-top: 1rem;
     display: grid;
     grid-template-areas: 
-    "mdp     mdp"
-    "redes   subs"
-    "dres    dres"
+    "mdp      mdp     subs"
+    "redes    dres    subs"
     ;
     align-content: space-between;
-    
+    grid-template-columns: 1fr 1fr 1fr;
 }
+
 .mdp{
     grid-area: mdp;
     @extend .flexcolum;
-    align-items: $align;
+    align-items: flex-start
 }
+
+.mdp p{
+    padding-left: 2rem;
+}
+
 .mdp img{
-    width: 75%;
+    width: 60%;
+    padding-left: 1rem;
 }
 
 .subs{
@@ -152,6 +171,7 @@
     @extend .flexcolum;
     align-items: flex-end;
     padding-right: 2rem;
+    
 }
 .redes{
     grid-area: redes;
@@ -160,13 +180,87 @@
 }
 .dres{
     grid-area: dres;
-    font-size: medium;
     @extend .flexcolum;
-    align-items: $align;
+    justify-content: flex-end;
 }
+
+.dres p{
+    font-size: small;
+    height: 100;
+    margin: 0;
+}
+
 /* fin footer */
 /* fin index */
 
+/* movile */
+@media screen and (max-width: 600px){
+.Mates{
+    
+        display: flex;
+        flex-direction: column;
+}
+.Yerbamate{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+}
 
+/* Tablet*/
+@media screen and (max-width: 800px){
+.Mates{
+    margin: 0;
+}
+.Mates div img{
+   width: 100%;
+}
+.Mates div{
+    margin-top: 1rem;
 
+}
+.Yerbamate{
+    display: grid;
+    grid-template-areas: 
+    "y1erp    y2dop"  
+    "y3erp    y4top"
+    "y5top    y6top"
+    ;   
+}
 
+.Yerbamate div{
+    padding: 0;
+    width: auto;
+    margin: 1rem;
+}
+.Yerbamate div img{
+    width: 100%;
+}
+
+.mdp p{
+    font-size: auto;
+}
+.mdp img{
+    width: 100%;
+}
+.redessociales img{
+    width: 20%;
+}
+
+.subs{
+    font-size: medium;
+    width: 80%;
+    padding: 0;
+}
+
+.subs section{
+    display: flex;
+    flex-direction: column;
+    width: 86%;
+}
+.subs section input{
+    width: 80%;
+    height: 85%;
+}
+}
+ 
